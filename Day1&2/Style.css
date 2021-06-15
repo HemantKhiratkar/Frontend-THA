@@ -1,0 +1,10 @@
+body {
+    background-color:rgb(224, 209, 189)
+}
+p{
+    font-style: italic;
+}
+h1{
+    font-style: bold;
+    text-align: center;
+}
