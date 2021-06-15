@@ -1,0 +1,30 @@
+ .Name{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-decoration-line: underline;
+    }
+ body{
+        border-style:double;
+        border-color: black;
+        color:black ;
+        background-color:cornsilk;
+    }
+.info{
+        text-align-last: right;
+        margin-right: 30px;
+    }
+ .left{
+        margin-left: 20px;
+    }
+ .right{
+        margin-left: 750px;
+        margin-right: 20px;
+        margin-top: -200px;
+        align-content: left;
+        margin-left: 75%;
+    }
+ .main{
+        border-style:dashed
+    }
+
