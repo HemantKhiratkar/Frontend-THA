@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple Calculator using Javascript</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+</head>
+<body>
+    <div class="main">
+        <u><h1>Simple Calculator</h1></u>
+        <h3>Enter first value</h3>
+        <input id="num-one" name="num-one" type="text"><br> 
+        <h3>Enter second value</h3>
+        <input id="num-two" name="num-two" type="text"><br>
+        <br>
+        <input id="box1" name="sign-area" type="radio" value="add"><i>Add</i> 
+        <input id="box2" name="sign-area" type="radio" value="subtract"><i>Substract</i> 
+        <input id="box3" name="sign-area" type="radio" value="multiply"><i>Multiply</i> 
+        <input id="box4" name="sign-area" type="radio" value="divide"><i>Divide</i><br>
+        <input id="box5" name="sign-area" type="radio" value="percentage"><i>Percentage</i><br>
+        <br>
+        <button onclick="outcome()" type="button">calculate</button>
+        <h1 id="result"> Answer: </h1>
+    </div>
+        </div>
+         
+        <script>
+               function outcome() { 
+                   var x = Number(document.getElementById("num-one").value);
+                   var y = Number(document.getElementById("num-two").value);
+                   var z = 0;
+                   
+                   if (document.getElementById("box1").checked){
+                       z = x + y;
+                   }
+                   else if (document.getElementById("box2").checked){ 
+                       z = x - y;
+                   }
+                   else if (document.getElementById("box3").checked){
+                       z = x * y;
+                   }
+                   else if (document.getElementById("box4").checked){
+                       z = x / y;
+                   }
+                   else{
+                       z= x*100/y;
+                   }
+                   document.getElementById("result").innerHTML = " Answer: "+ String(z);    
+               } 
+        </script>
+    
+</body>
