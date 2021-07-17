@@ -1,0 +1,5 @@
+.chess-grid {
+    display:grid;
+    grid-template-columns: repeat(8,32px);
+    border: 10px double #ffffff;
+  }
